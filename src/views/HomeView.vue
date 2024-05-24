@@ -144,8 +144,20 @@ const onDrag = (e: { touches: { clientX: any; }[]; clientX: any; }) => {
       </div>
       <div class="card-container">
         <div class="card">
-          <div class="card-info">
-
+          <img
+            src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13_2_.png"
+            alt="">
+          <span class="title-card">iporn 15 pro mec</span>
+          <div class="price">
+            <span class="sale-price">9.000₫</span>
+            <span class="original-price">10.000₫</span>
+          </div>
+          <div class="stars text-amber-400">
+            <font-awesome-icon :icon="['fas', 'star']" />
+            <font-awesome-icon :icon="['fas', 'star']" />
+            <font-awesome-icon :icon="['fas', 'star']" />
+            <font-awesome-icon :icon="['fas', 'star']" />
+            <font-awesome-icon :icon="['fas', 'star']" />
           </div>
         </div>
       </div>
