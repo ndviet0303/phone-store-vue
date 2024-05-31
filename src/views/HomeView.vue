@@ -24,43 +24,12 @@ const setSlide = (index: number) => {
   clearInterval(interval);
   startSlideshow();
 };
-const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % slides.value.length;
-};
-
-const prevSlide = () => {
-  currentIndex.value = (currentIndex.value - 1 + slides.value.length) % slides.value.length;
-};
 onMounted(() => {
   startSlideshow();
 });
 onBeforeUnmount(() => {
   clearInterval(interval);
 });
-let startX: number | null = null;
-const startDrag = (e: { touches: { clientX: any; }[]; clientX: any; }) => {
-  startX = e.touches ? e.touches[0].clientX : e.clientX;
-};
-const endDrag = (e: { changedTouches: { clientX: any; }[]; clientX: any; }) => {
-  if (startX === null) return;
-
-  let endX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
-  let deltaX = endX - startX;
-
-  if (deltaX > 50) {
-    prevSlide();
-  } else if (deltaX < -50) {
-    nextSlide();
-  }
-
-  startX = null;
-};
-const onDrag = (e: { touches: { clientX: any; }[]; clientX: any; }) => {
-  if (startX === null) return;
-
-  let currentX = e.touches ? e.touches[0].clientX : e.clientX;
-  let deltaX = currentX - startX;
-};
 </script>
 
 <template>
@@ -117,8 +86,7 @@ const onDrag = (e: { touches: { clientX: any; }[]; clientX: any; }) => {
         </li>
 
       </ul>
-      <div class="slideshow-container" @mousedown="startDrag" @touchstart="startDrag" @mouseup="endDrag"
-        @touchend="endDrag" @mousemove="onDrag" @touchmove="onDrag">
+      <div class="slideshow-container">
         <div class="slide fade" v-for="(slide, index) in slides" :key="index" v-show="currentIndex === index">
           <img :src="slide.src" :alt="slide.alt">
         </div>

@@ -1,8 +1,19 @@
-@import 'base.css';
+@import "base.css";
+@import "auth.css";
+@import "product.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --primary: #d70018;
+}
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -1,6 +1,7 @@
 .bg-header {
   background-color: #d70018;
   height: 64px;
+  z-index: 1000;
 }
 .header-main {
   height: 100%;

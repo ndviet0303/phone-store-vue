@@ -1,0 +1,85 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-with {
+  display: flex;
+  margin: auto;
+  gap: 15px;
+}
+
+.button-auth {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.google {
+  background-color: rgb(220, 53, 69);
+}
+
+.facebook {
+  background-color: rgb(59, 89, 152);
+}
+
+.hr-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  /* border-bottom: 1px solid #000; */
+  margin: 20px 0;
+}
+
+.hr-text::before,
+.hr-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #cacaca;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input input {
+  padding: 10px;
+  /* border-radius: 10px; */
+  /* border: 1px solid #cacaca; */
+  border: 0;
+  border-bottom: 1px solid #cacaca;
+  outline: none;
+}
+.text-focus {
+  /* display: none; */
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0px 10px;
+  color: #d70018;
+}
+.form-input input:focus {
+  border-bottom: 1px solid #d70018;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  color: grey;
+}
+
+.btn-login {
+  padding: 10px;
+  background-color: #d70018;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

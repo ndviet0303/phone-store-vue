@@ -1,0 +1,149 @@
+.product-detail {
+  display: flex;
+}
+/* .produt-left {
+  flex: 1 1 40%;
+} */
+.slide-icon {
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+.slide-icon:hover {
+  border: 2px solid #007bff;
+}
+
+.slide-text-icon {
+  font-size: 10px;
+  text-align: center;
+}
+.box-price {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  /* padding: 5px; */
+  font-size: 14px;
+}
+
+.box-price-product {
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 20px 5px 20px;
+}
+.box-config {
+  padding: 10px 20px 0px 20px;
+}
+.box-selected {
+  border: 1px solid #d70018 !important;
+}
+.box-selected::after {
+  content: "✓";
+  display: flex;
+  background-color: #d70018;
+  color: white;
+  border-radius: 10px 0 10px 0;
+  position: absolute;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-quantity {
+  font-weight: 700;
+}
+
+.input-quantity {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+}
+.input-quantity:focus {
+  outline: none;
+}
+.quantity-control {
+  padding: 4px 8px;
+}
+.input-field-quantity {
+  width: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.quantity-field {
+  align-items: center;
+  display: flex;
+  padding: 10px 0px;
+  gap: 5px;
+}
+
+.btn-payment {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0px;
+}
+.btn-buy {
+  background-color: #d70018;
+  color: white;
+  flex: 1 1 80%;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.btn-add-to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d70018;
+  flex: 1 1 20%;
+  padding: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 1px solid #d70018;
+}
+.text-cart {
+  font-size: 12px;
+}
+
+.info-product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.header-product {
+  font-weight: 700;
+}
+
+.product-information {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.product-description {
+  display: flex;
+  gap: 20px;
+}
+.product-feature {
+  flex: 1 1 70%;
+  box-shadow: 1px 1px 5px 1px #d1d5db;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.product-specs {
+  flex: 1 1 30%;
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px 1px #d1d5db;
+  border-radius: 10px;
+  padding: 10px;
+}
