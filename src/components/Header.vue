@@ -2,7 +2,7 @@
     <header class="sticky top-0 bg-header">
         <div class="container mx-auto h-full px-5">
             <div class="flex header-main gap-5">
-                <div class="header_logo">
+                <div class="header_logo" @click="$router.push({ name: 'home' })">
                     <img src="@/assets/logo.svg" alt="Vue logo" width="60px" />
                 </div>
                 <div class="btn-menu rounded-xl">
@@ -38,7 +38,7 @@
                         <span>hàng</span>
                     </div>
                 </div>
-                <div class="btn-auth">
+                <div class="btn-auth" @click="$router.push({ name: 'sign-in' })">
                     <font-awesome-icon :icon="['fas', 'user']" />
                     <span>Đăng nhập</span>
                 </div>
@@ -48,4 +48,12 @@
 </template>
 
 <script lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToLogin = () => {
+    console.log("test");
+    router.push({ name: 'sign-in' });
+};
 </script>

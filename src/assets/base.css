@@ -79,7 +79,9 @@
   background: hsla(0, 0%, 100%, 0.2);
   cursor: pointer;
 }
-
+.header_logo {
+  cursor: pointer;
+}
 .btn-auth {
   background: hsla(0, 0%, 100%, 0.2);
   color: #fce9eb;
@@ -88,6 +90,7 @@
   display: flex;
   flex-direction: column;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .bg-footer {
@@ -229,4 +232,20 @@
 .original-price {
   color: #707070;
   text-decoration: line-through;
+}
+
+.error-message {
+  color: #842029;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8d7da;
+}
+
+.success-message {
+  color: #0f5162;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d1e7dd;
 }

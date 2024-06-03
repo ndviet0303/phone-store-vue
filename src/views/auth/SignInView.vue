@@ -31,7 +31,8 @@
             </div>
             <a class="forgot-password" href="">Quên mật khẩu?</a>
             <button class="btn-login">Đăng nhập</button>
-            <span class="flex justify-center">Bạn chưa có tài khoản? <a class="text-red-500 font-bold" href="">Đăng
+            <span class="flex justify-center">Bạn chưa có tài khoản? <a @click="$router.push({ name: 'sign-up' })"
+                    class="text-red-500 font-bold" href="">Đăng
                     ký
                     ngay</a></span>
         </div>
