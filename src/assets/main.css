@@ -1,6 +1,7 @@
 @import "base.css";
 @import "auth.css";
 @import "product.css";
+@import "profile.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
