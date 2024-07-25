@@ -14,7 +14,16 @@ provide('setUser', setUser);
 const route = useRoute();
 
 const currentRouteName = computed(() => route.name);
-const isShowFooter = computed(() => currentRouteName.value !== 'sign-in' && currentRouteName.value !== 'sign-up' && currentRouteName.value !== 'profile');
+const hiddenFooterRoutes = [
+  'sign-in',
+  'sign-up',
+  'profile',
+  'product-histories',
+  'product-history',
+  'product-detail'
+];
+
+const isShowFooter = computed(() => !hiddenFooterRoutes.includes(currentRouteName.value));
 </script>
 
 <template>

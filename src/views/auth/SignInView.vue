@@ -70,9 +70,11 @@ const submitData = async () => {
             localStorage.setItem('token', data.token)
             successMessage.value = "Đăng nhập thành công! Đang Chuyển Hướng Về Trang Chủ";
             setTimeout(() => {
-                router.push({ name: 'home' });
+                router.push({ name: 'home' }).then(() => {
+                    window.location.reload();
+                });
             }, 2000);
-            window.location.reload()
+
         }
     }
     catch (e) {
